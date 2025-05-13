@@ -13,6 +13,7 @@ import com.booking.model.Bus;
 import com.booking.model.Passanger;
 import com.booking.model.Route;
 import com.booking.repository.BusRepository;
+import com.booking.repository.TicketService;
 import com.booking.service.BusService;
 import com.booking.service.RouteService;
 import com.booking.service.TicketBookingService;
@@ -22,6 +23,9 @@ public class BusBookingApplication implements CommandLineRunner {
 	
     @Autowired
     BusService busService;
+    
+    @Autowired
+    TicketService ts;
     
     @Autowired
      RouteService routeService;
@@ -43,20 +47,7 @@ public class BusBookingApplication implements CommandLineRunner {
 		
 		/*
 		 * this is for adding bus
-//		 */
-//		Route r=new Route(2,"Vijayavad","Hyderabad","2 PM");
-//		Bus b1=new Bus(2,14325,"sleeper",50,10,20,5,10);
-//		Bus b2=new Bus(3,14325,"sleeper",50,10,20,5,10);
-//		Bus b3=new Bus(4,14325,"sleeper",50,10,20,5,10);
-//		
-//		b1.setRoute(r);	
-//		b2.setRoute(r);
-//		b3.setRoute(r);
-//		routeService.saveRoute(r);
-//		busService.saveBus(b1);
-//		busService.saveBus(b2);
-//		busService.saveBus(b3);
-		
+
 		/*
 		 * this is for adding passanger
 		 */
