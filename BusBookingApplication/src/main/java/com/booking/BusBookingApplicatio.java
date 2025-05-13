@@ -19,7 +19,7 @@ import com.booking.service.RouteService;
 import com.booking.service.TicketBookingService;
 
 @SpringBootApplication
-public class BusBookingApplication implements CommandLineRunner {
+public class BusBookingApplicatio implements CommandLineRunner {
 	
     @Autowired
     BusService busService;
@@ -36,7 +36,7 @@ public class BusBookingApplication implements CommandLineRunner {
 //    @Autowired
 //    private CacheManager cacheManager;
 	public static void main(String[] args) {
-		SpringApplication.run(BusBookingApplication.class, args);
+		SpringApplication.run(BusBookingApplicatio.class, args);
 
 		
 	}
