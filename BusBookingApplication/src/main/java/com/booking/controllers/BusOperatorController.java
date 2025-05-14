@@ -85,10 +85,12 @@ public class BusOperatorController {
 		return false;
 	}
 	
-	@GetMapping("/sayHi")
+	@GetMapping("/")
 	public String sayHi() {
 		System.out.println("Working with the port and saying hi");
 		return "hi";
 	}
+	
+	
 
 }
