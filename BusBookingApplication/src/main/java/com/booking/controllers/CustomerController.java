@@ -78,22 +78,7 @@ public class CustomerController {
 
 	}
 
-//	@PostMapping("/bookTicket")
-//	public boolean bookTicket(@RequestParam("busId") Integer busId, @RequestParam("seatId") Integer seatId,
-//			@RequestParam("passangerId") Integer passangerId, @RequestParam("name") String name,
-//			@RequestParam("email") String email, @RequestParam("age") Integer age,
-//			@RequestParam("phoneNumber") Integer phoneNumber, @RequestParam("city") String city,
-//			@RequestParam("place") String place) {
-//
-//		Passanger passanger = new Passanger(passangerId, name, email, age, phoneNumber, city, place);
-//
-//		boolean b = ticketService.bookTicket(busId, seatId, passanger);
-//		if (b)
-//			return true;
-//		else
-//			return false;
-//
-//	}
+
 	
 	@PostMapping("/bookTickets")
 	public boolean bookSeat(@RequestBody TicketBody ticketData
