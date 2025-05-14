@@ -20,18 +20,6 @@ import com.booking.service.TicketBookingService;
 
 @SpringBootApplication
 public class BusBookingApplicatio {
-	
-    @Autowired
-    BusService busService;
-    
-    @Autowired
-    TicketService ts;
-    
-    @Autowired
-     RouteService routeService;
-    
-    @Autowired
-    TicketBookingService ticketBookingService;
     
 	public static void main(String[] args) {
 		SpringApplication.run(BusBookingApplicatio.class, args);
